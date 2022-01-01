@@ -12,7 +12,7 @@ FROM alpine
 RUN apk add openssh
 RUN mkdir /root/.ssh
 WORKDIR /root/.ssh
-RUN ssh-keygen -t rsa -C "chatkey" -f id_rsa
+RUN ssh-keygen -C "chatkey" -f id_rsa
 
 WORKDIR /usr/local/bin
 
